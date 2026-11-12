@@ -1,4 +1,5 @@
-// src/components/MediaRow.jsx
+import PropTypes from 'prop-types';
+
 const MediaRow = (props) => {
   const {item} = props;
   return (
@@ -16,3 +17,7 @@ const MediaRow = (props) => {
 };
 
 export default MediaRow;
+
+MediaRow.propTypes = {
+  item: PropTypes.object.isRequired,
+};
