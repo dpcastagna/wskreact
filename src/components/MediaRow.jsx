@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 
-const MediaRow = (props) => {
-  const {item} = props;
+const MediaRow = ({item, setItem}) => {
   return (
-    <tr>
+    <tr onClick={() => setItem(item)}>
       <td>
         <img src={item.thumbnail} alt={item.title} />
       </td>
