@@ -1,9 +1,7 @@
 import {useState} from 'react';
-import MediaRow from './MediaRow';
-import SingleView from './SingleView';
-// import TempCounter from './TempCounter';
+import MediaRow from '../components/MediaRow';
+import SingleView from '../components/SingleView';
 
-// mockdata, poistetaan myöhemmin
 const mediaArray = [
   {
     media_id: 8,
@@ -44,8 +42,6 @@ const Home = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   return (
     <>
-      {/* This is comment inside JSX, state demo: */}
-      {/* <TempCounter /> */}
       <h2>My Media</h2>
       <table>
         <thead>
