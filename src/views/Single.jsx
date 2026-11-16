@@ -16,6 +16,7 @@ const Single = () => {
         </video>
       )}
       <p>Description: {item.description}</p>
+      <p>Username: {item.username}</p>
       <p>Created: {new Date(item.created_at).toLocaleString('fi-FI')}</p>
       <p>Size: {item.filesize}</p>
       <p>Type: {item.media_type}</p>

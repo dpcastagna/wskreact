@@ -7,4 +7,5 @@ export default defineConfig({
   plugins: [react(), babel({presets: [reactCompilerPreset()]})],
 
   base: '/~danielec/wskhtmlcssjs/viikko04/',
+  // base: './',
 });
