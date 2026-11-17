@@ -5,6 +5,9 @@ import './App.css';
 import Profile from './views/Profile';
 import Upload from './views/Upload';
 import Single from './views/Single';
+import Login from './views/Login';
+import Logout from './views/Logout';
+
 const App = () => {
   const sitename = 'My App';
   return (
@@ -17,6 +20,8 @@ const App = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/upload" element={<Upload />} />
             <Route path="/single" element={<Single />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Logout />} />
           </Route>
         </Routes>
       </BrowserRouter>

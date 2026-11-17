@@ -38,4 +38,19 @@ const useUser = () => {
   return {getUserInformation};
 };
 
-export {useMedia, useUser};
+const postLogin = async (inputs) => {
+  const fetchOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(inputs),
+  };
+  const loginResult = await fetchData(
+    import.meta.env.VITE_AUTH_API + '/auth/login',
+    fetchOptions,
+  );
+  return loginResult;
+};
+
+export {useMedia, useUser, postLogin};
