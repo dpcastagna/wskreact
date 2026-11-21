@@ -7,11 +7,9 @@
  * @return {Promise<object>} - the fetched data as a JS object
  */
 const fetchData = async (url, options = {}) => {
-  // console.log('fetching data from url: ', url);
   const response = await fetch(url, options);
   const json = await response.json();
   if (!response.ok) {
-    // console.log('json', json);
     if (json.message) {
       throw new Error(json.message);
     }
