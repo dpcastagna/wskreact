@@ -6,6 +6,6 @@ import {defineConfig} from 'vite';
 export default defineConfig({
   plugins: [react(), babel({presets: [reactCompilerPreset()]})],
 
-  base: '/~danielec/wskhtmlcssjs/viikko05/',
+  base: '/~danielec/wskhtmlcssjs/viikko05/upload',
   // base: '/',
 });
